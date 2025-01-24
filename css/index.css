@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #fff;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 140%;
+	margin: 10px;
+}
+
+.main_box {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+}
+
+.main_box #blocklyDiv {
+	height: 100%;
+	width: 50%;
+}
+
+.main_box #main {
+	height: 50%;
+	width: 50%;
+}
+
+.button_user {
+	height: 30px;
+	width: 100px;
+	background-color: lawngreen;
+	border: none;
+	border-radius: 2px 2px 2px 2px;
+}
+
+#save {
+	margin: 2px;
+}
+
+#save>#fileInput {
+	display: none;
+}
+
+#save>label {
+	font-size: 13px;
+	display: inline-block;
+	line-height: 29px;
+	text-align: center;
+}
+

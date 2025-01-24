@@ -1,0 +1,25 @@
+# Examples, codelabs, etc.
+**/acorn_interpreter.js
+examples/interpreter-demo/acorn.js
+examples/interpreter-demo/diff_match_patch.js
+examples/interpreter-demo/interpreter.js
+node_modules/*
+codelabs/*
+gh-pages/*
+
+# All build artifacts, etc.
+**/dist/*
+**/build/*
+examples/blockly-svelte/public/bundle.js
+examples/blockly-angular/.angular
+**/node_modules/*
+**/CHANGELOG.md
+CHANGELOG.md
+PULL_REQUEST_TEMPLATE.md
+
+# Specific examples that are sometimes copied into plugins
+plugins/dev-create/templates/sample-app/*
+plugins/dev-create/templates/sample-app-ts/*
+
+# Golden test files
+plugins/**/golden/*
