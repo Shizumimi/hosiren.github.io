@@ -11,27 +11,26 @@
 		<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
 		<link rel="stylesheet" href="css/index.css">
-		<title>Demo</title>
+		<title>Data Structure Visualization with Blockly and ECharts</title>
 	</head>
 	<body onload="initialize()">
 		<div id="save">
-			<input type="button" class="button_user" name="saveToFile" onclick="saveToFile()" value="save" id="saving">
+			<input type="button" class="button_user" name="saveToFile" onclick="saveToFile()" value="Save" id="saving">
 			<input type="file" id="fileInput">
-			<label for="fileInput" class="button_user">upload</label>
-			<input type="button" class="button_user" name="loadFromFile" onclick="loadFromFile()" value="load"
-				id="loading">
-			<input type="button" class="button_user" name="showChart" onclick="showChart()" value="show chart"
+			<label for="fileInput" class="button_user">Load</label>
+			<input type="button" class="button_user" name="showChart" onclick="showChart()" value="Show chart"
 				id="showChart">
+			<input type="button" class="button_user" onclick="showSample()" value="Show sample" />
 		</div>
 		<div class="main_box">
 			<div id="blocklyDiv"></div>
 			<div id="main"></div>
 		</div>
-		
+
 		<script>
 			fileInput();
 		</script>
-		
+
 		<!-- Toolbox Definition -->
 		<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox-categories" style="display: none">
 			<category name="Logic" categorystyle="logic_category">
