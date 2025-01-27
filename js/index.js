@@ -15,7 +15,7 @@ function start() {
 	Blockly.serialization.workspaces.load(state, workspace); */
 	workspace = Blockly.inject('blocklyDiv', {
 		toolbox: document.getElementById('toolbox-categories'),
-	});
+		grid:{spacing: 20,length: 3,colour: '#ccc',snap: true},trashcan: true});
 	if (state) {
 		Blockly.serialization.workspaces.load(state, workspace);
 	}
